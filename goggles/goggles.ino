@@ -172,7 +172,7 @@ void xmasSpinSetup()
 {
   int modes[] = {MODE_SPIN_CCW, MODE_SPIN_CW, MODE_SPIN_UP, MODE_SPIN_DOWN};
   setSpinDirection(modes[random(4)]);
-  tailLength = 1 << random(3);
+  tailLength = 1 << random(2)+1;
   numPointers = 1 << random(2)+ 1;
   
   for (int i = 0; i < 16; i++) {
